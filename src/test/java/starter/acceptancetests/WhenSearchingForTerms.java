@@ -22,7 +22,7 @@ class WhenSearchingForTerms {
     void searchForRedThings() {
         actor.attemptsTo(
                 NavigateTo.theSearchHomePage(),
-                LookForInformation.about("pinkred"),
+                LookForInformation.about("red"),
                 Ensure.that(TheWebPage.title()).containsIgnoringCase("red")
         );
     }
